@@ -673,7 +673,7 @@ public class CloudBigtableIO {
         }
       } catch (RetriesExhaustedWithDetailsException exception) {
         logExceptions(context, exception);
-        retrowException(exception);
+        rethrowException(exception);
       } finally {
         // Close the connection to clean up resources.
         super.finishBundle(context);
@@ -722,7 +722,7 @@ public class CloudBigtableIO {
         DOFN_LOG.trace("Finished persisting {} elements to table {}.", mutationCount, tableName);
       } catch (RetriesExhaustedWithDetailsException exception) {
         logExceptions(context, exception);
-        retrowException(exception);
+        rethrowException(exception);
       }
     }
   }
