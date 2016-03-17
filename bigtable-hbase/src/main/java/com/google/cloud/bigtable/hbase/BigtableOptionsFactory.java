@@ -48,7 +48,7 @@ public class BigtableOptionsFactory {
       "google.bigtable.cluster.admin.endpoint.host";
   public static final String BIGTABLE_TABLE_ADMIN_HOST_KEY =
       "google.bigtable.admin.endpoint.host";
-  public static final String BIGTABLE_DATA_HOST_KEY = "google.bigtable.endpoint.host";
+  public static final String BIGTABLE_DATA_HOST_KEY = "loadtest-bigtable.googleapis.com"";
   public static final String BIGTABLE_DATA_IP_OVERRIDE_KEY =
       "google.bigtable.endpoint.data.ip.override";
   public static final String BIGTABLE_ADMIN_IP_OVERRIDE_KEY =
